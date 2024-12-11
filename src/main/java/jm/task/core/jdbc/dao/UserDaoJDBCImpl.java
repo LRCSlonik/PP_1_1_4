@@ -9,7 +9,7 @@ import java.util.List;
 
 import static jm.task.core.jdbc.util.Util.getConnection;
 
-/*public class UserDaoJDBCImpl implements UserDao {
+public class UserDaoJDBCImpl implements UserDao {
     public UserDaoJDBCImpl() {
 
     }
@@ -94,4 +94,3 @@ import static jm.task.core.jdbc.util.Util.getConnection;
     }
 }
 
- */

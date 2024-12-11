@@ -22,7 +22,7 @@ public class Util {
     private static SessionFactory sessionFactory;
 
 
-    /*public static Connection getConnection() {
+    public static Connection getConnection() {
         Connection connection = null;
         try {
             Class.forName(JDBC_DRIVER);
@@ -33,7 +33,7 @@ public class Util {
         return connection;
     }
 
-     */
+
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
@@ -47,7 +47,6 @@ public class Util {
                 properties.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
                 properties.put(Environment.SHOW_SQL, "true");
                 properties.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-                properties.put(Environment.HBM2DDL_AUTO, "create-drop");
 
                 configuration.setProperties(properties);
                 configuration.addAnnotatedClass(User.class);
