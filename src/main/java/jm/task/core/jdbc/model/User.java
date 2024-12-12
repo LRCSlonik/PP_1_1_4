@@ -7,7 +7,7 @@ import java.util.Objects;
 @Table
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
 
